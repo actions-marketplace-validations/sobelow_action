@@ -1,6 +1,6 @@
 # Sobelow Action
 
-This is a GitHub Action for [Sobelow](https://github.com/nccgroup/sobelow), the security-focused static analyzer for the [Phoenix Framework](https://www.phoenixframework.org/).
+This is a GitHub Action for [Sobelow](https://github.com/sobelow/sobelow), the security-focused static analyzer for the [Phoenix Framework](https://www.phoenixframework.org/).
 
 The most basic workflow looks like this:
 
