@@ -4,7 +4,7 @@ This is a GitHub Action for [Sobelow](https://github.com/sobelow/sobelow), the s
 
 The most basic workflow looks like this:
 
-```
+```yaml
 on: [push]
 
 jobs:
@@ -20,16 +20,16 @@ jobs:
           sarif_file: results.sarif
 ```
 
-This will scan your Phoenix application, and add findings to the Security tab of your repository. 
+This will scan your Phoenix application, and add findings to the Security tab of your repository.
 
 Two options are supported:
 
-* `report`: if set to "false", this will not generate a report, and will output findings to stdout. 
+* `report`: if set to "false", this will not generate a report, and will output findings to stdout.
 * `flags`: accepts arbitrary Sobelow flags.
 
 The following example uses `flags` to suppress `Config` findings:
 
-```
+```yaml
 on: [push]
 
 jobs:
