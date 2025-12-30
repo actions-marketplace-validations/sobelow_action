@@ -8,7 +8,7 @@ inputs:
     description: "Output a results.sarif file for GitHub Security integration"
     default: true
   flags:
-    description: "Flags (https://github.com/nccgroup/sobelow#options)"
+    description: "Flags (https://github.com/sobelow/sobelow#options)"
 
 runs:
   using: 'docker'
