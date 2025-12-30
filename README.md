@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Sobelow Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - id: run-action
         uses: sobelow/action@v1
-      - uses: github/codeql-action/upload-sarif@v1
+      - uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: results.sarif
 ```
@@ -37,12 +37,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Sobelow Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - id: run-action
         uses: sobelow/action@v1
         with:
           flags: '-i Config'
-      - uses: github/codeql-action/upload-sarif@v1
+      - uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: results.sarif
 ```
